@@ -1,62 +1,58 @@
-### 🚀 **Advanced Java Project - README** 🌟  
-📚 **A comprehensive Advanced Java project** covering **Servlets, JSP, JDBC, and more**. This repository contains Java programs that demonstrate core concepts of **dynamic web development** using **Java EE technologies**.  
+### 🚀 **Advanced Java Repository - README** 🌟  
+📚 **Welcome to the Advanced Java repository** showcasing **Java EE technologies** such as **Servlets, JSP, JDBC, Swing**, and more. This repository contains multiple projects covering **dynamic web development, GUI applications, database connectivity, and session management**.  
 
 ---
 
 ## 🌟 **Features**
 
-### ✅ **Core Java EE Concepts**
+### ✅ **Java EE Concepts**
 - **Servlets:**  
    - Handling HTTP requests and responses.  
    - Session management using cookies and URL rewriting.  
    - Data transfer between servlets.  
 - **JSP (JavaServer Pages):**  
-   - Dynamic HTML generation.  
+   - Dynamic HTML generation with Java logic.  
    - Integration with servlets.  
    - Expression Language (EL) and JSTL usage.  
 - **JDBC (Java Database Connectivity):**  
-   - Database connection and CRUD operations.  
-   - Data persistence with MySQL.  
-
-### 🔥 **Project Highlights**
-- **MVC Architecture:**  
-   - Separation of concerns with **Model-View-Controller** structure.  
-- **Database Integration:**  
-   - MySQL database with JDBC.  
-   - Performing CRUD operations.  
-- **Form Handling:**  
-   - Handling form data with servlets and JSP.  
-- **Session Management:**  
-   - Managing user sessions securely.  
+   - Connecting Java applications to MySQL.  
+   - CRUD operations (Create, Read, Update, Delete).  
+- **Swing GUI Applications:**  
+   - Graphical user interfaces with **Java Swing**.  
+   - Event handling and UI components.  
+   - Database integration with Swing forms.  
 
 ---
 
 ## 🛠️ **Tech Stack**
 - **Programming Language:** Java  
 - **Backend:** Servlets, JSP, JDBC  
+- **Frontend:** Swing GUI  
 - **Database:** MySQL  
-- **IDE:** Eclipse/IntelliJ  
+- **IDE:** Eclipse / IntelliJ  
 - **Web Server:** Apache Tomcat  
+- **Version Control:** GitHub  
 
 ---
 
-## 📚 **Project Structure**
-```css
-📂 advjava/src  
- ┣ 📂 cookies                 → Servlet for managing cookies.  
- ┃ ┣ Servlet1.java            → First servlet handling POST requests.  
- ┃ ┗ Servlet2.java            → Second servlet displaying cookie data.  
- ┣ 📂 database                → JDBC connection and CRUD operations.  
- ┃ ┣ DBConnection.java        → Database connection class.  
- ┃ ┣ InsertDataServlet.java   → Servlet for inserting data.  
- ┃ ┗ DisplayDataServlet.java  → Servlet for displaying data.  
- ┣ 📂 jsp                     → JSP files for dynamic content rendering.  
- ┃ ┣ login.jsp                → JSP for login form.  
- ┃ ┣ register.jsp             → JSP for user registration.  
- ┃ ┗ dashboard.jsp            → User dashboard with dynamic content.  
- ┣ 📂 web-inf                  → Web configuration files.  
- ┃ ┗ web.xml                  → Servlet mapping and configuration.  
- ┗ index.html                  → Landing page with form.  
+## 📚 **Repository Structure**
+```
+📂 Adv-java  
+ ┣ 📂 advjava                      → Source code folder  
+ ┃ ┣ 📂 src                        → Main source code  
+ ┃ ┃ ┣ 📂 cookies                  → Servlet projects with cookies handling  
+ ┃ ┃ ┣ 📂 database                 → JDBC connectivity and CRUD operations  
+ ┃ ┃ ┣ 📂 jsp                      → JSP files for dynamic content rendering  
+ ┃ ┃ ┣ 📂 servlet                  → Servlet-based projects  
+ ┃ ┃ ┣ 📂 session_management       → Projects with session handling  
+ ┃ ┃ ┣ 📂 swing                    → Java Swing GUI applications  
+ ┃ ┃ ┣ 📂 web-inf                  → Web configuration files  
+ ┃ ┗ 📂 index.html                 → Landing page  
+ ┣ 📂 WebContent                   → Web pages and JSPs  
+ ┣ 📂 lib                          → External libraries (JDBC drivers, etc.)  
+ ┣ 📄 web.xml                      → Servlet configuration file  
+ ┣ 📄 README.md                    → Project documentation  
+ ┗ 📄 pom.xml                      → Maven dependencies  
 ```
 
 ---
@@ -65,74 +61,111 @@
 
 ### 🔥 **Prerequisites**
 - Install **JDK 17+**  
-- Install **Eclipse/IntelliJ**  
+- Install **Eclipse**  
 - Install **Apache Tomcat 10+**  
 - Install **MySQL Server**  
-
-### ✅ **Setup Instructions**
-
-1. **Clone the repository:**
+- Clone the repository:  
 ```bash
-git clone https://github.com/Rakshita123136/Adv-java.git
-cd Adv-java
+git clone https://github.com/Rakshita123136/Adv-java.git  
+cd Adv-java  
 ```
 
-2. **Import the project into Eclipse/IntelliJ:**
-- Open your IDE → `File` → `Import` → `Existing Maven/Java Project`.  
-- Select the `advjava/src` folder.  
-- Click **Finish**.  
-
-3. **Configure Tomcat Server:**
-- Go to **Server** tab → `Add new server`.  
-- Select **Apache Tomcat**.  
-- Set the **Tomcat installation directory**.  
-- Click **Finish**.  
-
-4. **Configure MySQL Database:**
-- Start MySQL Server.  
-- Create a new database:  
-```sql
-CREATE DATABASE advjava;
-USE advjava;
-```
-- Import sample data if provided.  
-
-5. **Deploy the Project:**
-- Run the project on **Tomcat Server**.  
-- Access the app at:  
-```
-http://localhost:8080/advjava
-```
+### ✅ **Import into IDE**
+1. Open your IDE.  
+2. Go to `File` → `Import` → `Existing Maven/Java Project`.  
+3. Select the `Adv-java` folder.  
+4. Click **Finish**.  
 
 ---
 
-## 🔥 **Database Configuration**
+## 🔥 **Database Setup**
 
-### ✅ **Database Schema**
+### ✅ **MySQL Configuration**
+1. Start the MySQL server.  
+2. Create a new database:  
 ```sql
-CREATE DATABASE advjava;
-
-USE advjava;
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    password VARCHAR(255) NOT NULL
-);
+CREATE DATABASE advjava;  
+USE advjava;  
 ```
 
-### ✅ **Sample Data**
+### ✅ **Create Tables**
+```sql
+CREATE TABLE users (  
+    id INT AUTO_INCREMENT PRIMARY KEY,  
+    username VARCHAR(50) NOT NULL,  
+    email VARCHAR(100) NOT NULL,  
+    password VARCHAR(255) NOT NULL  
+);  
+```
+
+### ✅ **Insert Sample Data**
 ```sql
 INSERT INTO users (username, email, password) VALUES  
-('John Doe', 'john.doe@gmail.com', 'password123'),  
-('Jane Smith', 'jane.smith@gmail.com', 'securepass');  
+('Alice', 'alice@gmail.com', 'pass123'),  
+('Bob', 'bob@gmail.com', 'securepass');  
 ```
 
 ---
 
-## ⚙️ **Dependencies**
-Make sure you have the following dependencies in your `pom.xml` or classpath:  
+## ▶️ **Run the Project**
+
+### ✅ **Tomcat Configuration**
+1. Go to **Server** tab → `Add new server`.  
+2. Select **Apache Tomcat**.  
+3. Set the **Tomcat installation directory**.  
+4. Click **Finish**.  
+
+### ✅ **Deploy the Project**
+- Right-click on the project → `Run As` → `Run on Server`.  
+- Open the app in your browser:  
+```
+http://localhost:8080/Adv-java  
+```
+
+---
+
+## ⚙️ **Key Projects in the Repository**
+
+### 📂 **1. Servlet Projects**
+- **Cookies Handling:**  
+   - Uses cookies to store and retrieve session data.  
+   - Demonstrates client-side session management.  
+- **Session Management:**  
+   - Maintains user sessions across multiple requests.  
+   - Uses `HttpSession` for storing user-specific data.  
+
+### 📂 **2. JSP Projects**
+- **Dynamic Pages:**  
+   - JSP for rendering dynamic HTML content.  
+   - Data retrieval and display using JSP.  
+- **JSP + Servlet Integration:**  
+   - Combines JSP and servlets for MVC architecture.  
+   - Uses JSP for presentation and servlets for logic.  
+
+### 📂 **3. JDBC Projects**
+- **Database Connectivity:**  
+   - Connects Java apps with MySQL.  
+   - Performs CRUD operations.  
+- **CRUD Operations:**  
+   - `Create`, `Read`, `Update`, and `Delete` data using JDBC.  
+   - Handles SQL exceptions.  
+
+### 📂 **4. Swing GUI Projects**
+- **User Registration Form:**  
+   - Swing-based GUI for user registration.  
+   - Data persistence using JDBC.  
+   - Includes event handling.  
+- **Login Application:**  
+   - GUI-based login form with username and password validation.  
+   - Integration with MySQL database.  
+- **Product Management System:**  
+   - Swing application with CRUD functionality.  
+   - Database integration for managing products.  
+
+---
+
+## 🔥 **Dependencies**
+Make sure you have the following dependencies in your `pom.xml`:  
 ```xml
 <dependencies>
     <dependency>
@@ -151,15 +184,56 @@ Make sure you have the following dependencies in your `pom.xml` or classpath:
 
 ---
 
+## ✅ **Usage Instructions**
+1. **Servlet Execution:**  
+   - Navigate to the Servlet URL in the browser:  
+   ```
+   http://localhost:8080/Adv-java/servlet_name  
+   ```
+
+2. **JSP Execution:**  
+   - Access JSP pages via:  
+   ```
+   http://localhost:8080/Adv-java/jsp/page_name.jsp  
+   ```
+
+3. **Swing Execution:**  
+   - Run the Swing application directly from your IDE.  
+   - Select the `main()` method and execute the program.  
+
+---
+
 ## 🚀 **Troubleshooting**
 
 ✅ **Common Issues:**  
 - 🔥 *Tomcat server not starting:*  
-   → Verify the server port (default: `8080`).  
+   → Check server logs and verify port configurations.  
 - ⚠️ *Database connection errors:*  
-   → Ensure MySQL server is running and the connection details are correct.  
+   → Verify the MySQL server is running and the connection details are correct.  
 - ❗ *404 error on servlet:*  
    → Check servlet mappings in `web.xml`.  
+- 🛠️ *Swing UI issues:*  
+   → Ensure correct event handling for GUI interactions.  
+
+---
+
+## 🌟 **Contributing**
+✅ Contributions are welcome!  
+If you'd like to contribute:  
+1. **Fork the repository.**  
+2. Create a new branch:  
+```bash
+git checkout -b feature-name  
+```
+3. Commit your changes:  
+```bash
+git commit -m "Added new feature"  
+```
+4. Push to the branch:  
+```bash
+git push origin feature-name  
+```
+5. Open a **pull request**.  
 
 ---
 
